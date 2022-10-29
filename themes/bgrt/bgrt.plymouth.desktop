@@ -6,7 +6,7 @@ ModuleName=two-step
 [two-step]
 Font=Cantarell 12
 TitleFont=Cantarell Light 30
-ImageDir=@PLYMOUTH_THEME_PATH@/spinner
+ImageDir=@PLYMOUTH_THEME_PATH@/NovOS
 DialogHorizontalAlignment=.5
 DialogVerticalAlignment=.382
 TitleHorizontalAlignment=.5
@@ -24,35 +24,6 @@ ProgressBarForegroundColor=0xffffff
 DialogClearsFirmwareBackground=true
 MessageBelowAnimation=true
 
-[boot-up]
-UseEndAnimation=false
-UseFirmwareBackground=true
-
-[shutdown]
-UseEndAnimation=false
-UseFirmwareBackground=true
-
-[reboot]
-UseEndAnimation=false
-UseFirmwareBackground=true
-
-[updates]
-SuppressMessages=true
-ProgressBarShowPercentComplete=true
-UseProgressBar=true
-Title=Installing Updates...
-SubTitle=Do not turn off your computer
-
-[system-upgrade]
-SuppressMessages=true
-ProgressBarShowPercentComplete=true
-UseProgressBar=true
-Title=Upgrading System...
-SubTitle=Do not turn off your computer
-
-[firmware-upgrade]
-SuppressMessages=true
-ProgressBarShowPercentComplete=true
-UseProgressBar=true
-Title=Upgrading Firmware...
-SubTitle=Do not turn off your computer
+[script]
+ImageDir=/usr/share/plymouth/themes/NovOS
+ScriptFile=/usr/share/plymouth/themes/NovOS/NovOS.script
