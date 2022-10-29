@@ -12,6 +12,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+<<<<<<< HEAD
+    - uses: actions/checkout@v3
+    - name: make
+      run: LDFLAGS="$LDFLAGS -ludev" ./autogen.sh \
+		--prefix=/usr \
+		--exec-prefix=/usr \
+		--sysconfdir=/etc \
+		--localstatedir=/var \
+		--libdir=/usr/lib \
+		--libexecdir=/usr/lib \
+		--sbindir=/usr/bin \
+		--enable-systemd-integration \
+		--enable-drm \
+		--enable-tracing \
+		--enable-pango \
+		--enable-gtk=no \
+		--with-release-file=/etc/os-release \
+		--with-background-color=0x000000 \
+		--with-background-start-color-stop=0x000000 \
+		--with-background-end-color-stop=0x4D4D4D \
+		--without-rhgb-compat-link \
+		--without-system-root-install \
+		--runstatedir=/run
+      
+      make
+    - name: make check
+      run: make check
+    - name: make distcheck
+      run: make distcheck
+=======
       - name: checkout repo
         uses: actions/checkout@v2
       - name: build application
@@ -20,3 +50,4 @@ jobs:
         run: make check
       - name: make distcheck
         run: make distcheck
+>>>>>>> c5d483ac633db2e3bcb2943dd5a5f51a335d24b6
