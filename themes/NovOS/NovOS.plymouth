@@ -1,8 +1,0 @@
-[Plymouth Theme]
-Name=NovOS
-Description=Loginspinner animation from Deepin 15 for Plymouth.
-ModuleName=script
-
-[script]
-ImageDir=/usr/share/plymouth/themes/NovOS
-ScriptFile=/usr/share/plymouth/themes/NovOS/NovOS.script
