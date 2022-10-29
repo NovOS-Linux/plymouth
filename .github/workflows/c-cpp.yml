@@ -14,8 +14,6 @@ jobs:
     steps:
       - name: checkout repo
         uses: actions/checkout@v2
-      - name: auto create makefile
-        run: automake
       - name: build application
         run: make
       - name: make check
