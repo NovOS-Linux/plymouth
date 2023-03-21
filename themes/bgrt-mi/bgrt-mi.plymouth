@@ -30,7 +30,6 @@ UseFirmwareBackground=true
 
 [shutdown]
 UseEndAnimation=false
-UseFirmwareBackground=true
 Title=Shutting down...
 
 [reboot]
